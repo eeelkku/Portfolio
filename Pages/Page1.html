@@ -19,13 +19,29 @@
     <hr>
 
     <h2>Sneak peak to the world</h2>
-    <p>Here you get a sneak peak for the world of photography. <br>
+    <p id="para1">Here you get a sneak peak for the world of photography. <br>
     I have selected few pictures for here and there is a link below <br>
     for a site where you can see more and purchase my work if you so desire.</p>
-    <p> <a href="https://www.eyeem.com/u/elquuh">More photos from me!</a></p>
 
-    <img src="Styles/Media/Dragonfly.jpg" alt="Dragonfly on a fence">
-    <img src="Styles/Media/lensball.jpg" alt="Lensball flipping the world">
+    <script type="text/javascript">
+        function show() {
+            document.getElementById('kuva2').style.visibility='visible'
+            document.getElementById('kuva1').style.visibility='visible'
+        }
+
+        function hide() {
+            document.getElementById('kuva2').style.visibility='hidden'
+            document.getElementById('kuva1').style.visibility='hidden'
+        }
+    </script>
+    
+    <img id="kuva1" src="Styles/Media/Dragonfly.jpg" alt="Dragonfly on a fence">
+    <img id="kuva2" src="Styles/Media/lensball.jpg" alt="Lensball flipping the world">
+    
+   <input type="button" onclick="show()" value="Show">
+   <input type="button" onclick="hide()" value="Hide">
+    <p id="linkki"> <a href="https://www.eyeem.com/u/elquuh">More photos from me!</a></p>
+
 </body>
 
 
